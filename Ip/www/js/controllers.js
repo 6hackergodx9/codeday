@@ -24,12 +24,26 @@ angular.module('app.controllers', [])
            // An error occured. Show a message to the user
        });
    }
+   $scope.post = function(){
+     var companyName = $scope.company_name;
+     var desc = $scope.description;
+      ref.push({
+        img:image,
+        comp_name:companyName,
+        description:desc,
+        likes:1
+      });
+      alert(companyName,desc,image);
+   }
 })
 
 .controller('cartTabDefaultPageCtrl', function($scope) {
+  $scope.posts = [
 
+  ];
 })
 
 .controller('cloudTabDefaultPageCtrl', function($scope) {
 
 });
+var image;

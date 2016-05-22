@@ -25,5 +25,3 @@ angular.module('app', ['ionic', 'app.controllers', 'app.routes', 'app.services',
 .config(function($ionicConfigProvider) {
   $ionicConfigProvider.tabs.position('bottom'); // other values: top
 });
-
-var ref = new Firebase("https://project-498244156619960010.firebaseio.com/");

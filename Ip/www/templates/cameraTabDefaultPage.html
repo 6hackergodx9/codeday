@@ -5,12 +5,12 @@
       <img ng-show="imgURI === undefined" class="cameraImg" ng-src="http://www.billysboathousegrill.com/banner_sample300x300.jpg">
       <button class="button" ng-click="takePicture()">Take Pic of Clothing</button>
       <label class="item item-input">
-        <input placeholder="Company Name" type="text" id="company_name" name="comp_name">
+        <input placeholder="Company Name" type="text" ng-model="company_name" id="company_name" name="comp_name">
       </label>
       <label class="item item-input">
-        <input placeholder="Description" id="description" type="text" name="description">
+        <input placeholder="Description" ng-model="description" id="description" type="text" name="description">
       </label>
-      <button class="button icon ion-checkmark-round"></button>
+      <button id="submit" ng-click="post()" class="button icon ion-checkmark-round"></button>
     <!-- all changes from our Firebase database magically appear here! -->
     </div>
     </ion-content>

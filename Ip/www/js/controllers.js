@@ -1,7 +1,6 @@
 angular.module('app.controllers', [])
 
 
-.controller('cameraTabDefaultPageCtrl', function($scope) {
 
 .controller('cameraTabDefaultPageCtrl', function($scope,$cordovaCamera) {
   var ref = new Firebase("https://project-498244156619960010.firebaseio.com/");
@@ -41,14 +40,10 @@ angular.module('app.controllers', [])
 })
 
 .controller('cartTabDefaultPageCtrl', function($scope) {
-  $scope.posts = [
 
-  ];
 })
 
 .controller('cloudTabDefaultPageCtrl', function($scope) {
 
 });
 var image;
-
-})

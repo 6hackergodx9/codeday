@@ -1,5 +1,8 @@
 angular.module('app.controllers', [])
 
+
+.controller('cameraTabDefaultPageCtrl', function($scope) {
+
 .controller('cameraTabDefaultPageCtrl', function($scope,$cordovaCamera) {
   var ref = new Firebase("https://project-498244156619960010.firebaseio.com/");
   $scope.takePicture = function() {
@@ -47,3 +50,5 @@ angular.module('app.controllers', [])
 
 });
 var image;
+
+})
